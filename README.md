@@ -20,7 +20,9 @@
 
 ## Repository structure
 - `programs/` — 10 executable Python source files.
-- `documentation/` — problem statements, objectives, assumptions, algorithms, flowcharts, pseudocode, test cases, conclusions and syllabus mapping.
+- `documentation/` — problem statements, objectives, assumptions, algorithms, flowcharts, pseudocode, test cases and conclusions.
+- `screenshots/` — sample program outputs.
+- `Python_ABL_Final_Report.pdf` — consolidated report.
 
 ## Syllabus coverage
 - **Unit I:** Computational thinking, problem-solving, algorithms, flowcharts, Python fundamentals, data types, I/O, type conversion and operators.
@@ -28,12 +30,10 @@
 - **Unit III:** Lists, nested lists, tuples, tuple unpacking, sets and membership testing.
 
 ## Run
-Install Python 3 and run a program from the repository root, for example:
+Install Python 3 and run a program from the `programs` directory, for example:
 
 ```bash
 python programs/01_scholarship_allocation.py
 ```
 
 All programs use Python's built-in features and require no external packages.
-
-**Note:** The consolidated PDF report and PNG output screenshots are available in the complete project ZIP supplied separately in the ChatGPT conversation; they are not currently stored in this repository.
