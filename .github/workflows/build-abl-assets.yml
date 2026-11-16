@@ -1,38 +1,32 @@
 name: Build Python ABL report and screenshots
-
 on:
   push:
     branches: [main]
     paths:
-      - 'programs/**'
-      - 'documentation/**'
-      - 'scripts/build_assets.py'
+      - 'Python-ABL/programs/**'
+      - 'Python-ABL/documentation/**'
+      - 'Python-ABL/scripts/build_assets.py'
       - '.github/workflows/build-abl-assets.yml'
   workflow_dispatch:
-
 permissions:
   contents: write
-
 jobs:
   build-assets:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install report and image libraries
-        run: pip install pillow reportlab
-      - name: Generate report and screenshots
-        run: python scripts/build_assets.py
-      - name: Commit generated files
+      - run: pip install pillow reportlab
+      - name: Generate PDF and output screenshots
+        run: python Python-ABL/scripts/build_assets.py
+      - name: Commit generated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Python_ABL_Final_Report.pdf screenshots/
+          git add Python-ABL/Python_ABL_Final_Report.pdf Python-ABL/screenshots/
           if ! git diff --cached --quiet; then
-            git commit -m "Add consolidated PDF report and program output screenshots"
+            git commit -m "Refresh Python ABL report and screenshots"
             git push
           fi
