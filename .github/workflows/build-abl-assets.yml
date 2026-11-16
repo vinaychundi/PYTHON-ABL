@@ -22,6 +22,8 @@ jobs:
         run: |
           pip install reportlab playwright
           python -m playwright install --with-deps chromium
+      - name: Run automated test cases for all ten programs
+        run: python Python-ABL/tests/test_programs.py
       - name: Generate PDF and Chromium output screenshots
         run: python Python-ABL/scripts/build_assets.py
       - name: Commit generated files
