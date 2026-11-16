@@ -1,0 +1,11 @@
+Number of students: Number of subjects: Subject 1: Subject 2: 
+Student name: Marks in Python: Marks in Maths: 
+Student name: Marks in Python: Marks in Maths: 
+STUDENT PERFORMANCE
+Asha Total: 150.0 Average: 75.0
+Balu Total: 100.0 Average: 50.0
+Top performer: Asha
+
+SUBJECT AVERAGES
+Python 60.0
+Maths 65.0

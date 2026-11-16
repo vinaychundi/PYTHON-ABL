@@ -1,0 +1,7 @@
+Number of timetable entries: 
+Entry 1
+Course: Student group: Room: Start hour (0-23): End hour (1-24): 
+Entry 2
+Course: Student group: Room: Start hour (0-23): End hour (1-24): Conflict: Math and Physics
+Reason: Same student group
+Total conflicts: 1

@@ -1,0 +1,9 @@
+Number of registration entries: Registration ID: Amount collected: Registration ID: Amount collected: Total sponsorship: Total expenses: 
+FESTIVAL AUDIT
+Unique participants: 2
+Expected registration revenue: 600
+Actual collection counted once: 600.0
+Duplicate IDs: set()
+Sponsorship: 1000.0 Expenses: 1200.0
+Final balance: 400.0
+SURPLUS

@@ -1,0 +1,5 @@
+Available relief units: Number of affected areas: Area name: Required units: Priority (1 urgent, 2 medium, 3 normal): Area name: Required units: Priority (1 urgent, 2 medium, 3 normal): 
+RELIEF ALLOCATION
+North Priority: 1 Allocated: 80 Unmet: 0
+South Priority: 2 Allocated: 20 Unmet: 30
+Remaining stock: 0

@@ -1,0 +1,8 @@
+Number of candidates: 
+Candidate 1
+Name: Academic marks: Assessment score: Attendance: 
+Candidate 2
+Name: Academic marks: Assessment score: Attendance: 
+INTERNSHIP RANKING
+1 Anu Weighted score: 80.0
+Not eligible: ['Bala']
