@@ -1,4 +1,7 @@
 Number of students: 
 Student 1
 Name: Subject 1 marks: Subject 2 marks: Subject 3 marks: Attendance percentage: Lab score: Ravi Average: 45.0 Risk: HIGH Reasons: ['Low marks', 'Low attendance', 'Low lab score']
-Risk totals - High: 1 Medium: 0 Low: 0
+
+Student 2
+Name: Subject 1 marks: Subject 2 marks: Subject 3 marks: Attendance percentage: Lab score: Anu Average: 87.66666666666667 Risk: LOW Reasons: []
+Risk totals - High: 1 Medium: 0 Low: 1

@@ -3,6 +3,9 @@ Transaction 1
 Transaction ID: Amount: Type (DEPOSIT/WITHDRAWAL): 
 Transaction 2
 Transaction ID: Amount: Type (DEPOSIT/WITHDRAWAL): 
+Transaction 3
+Transaction ID: Amount: Type (DEPOSIT/WITHDRAWAL): 
 TRANSACTION AUDIT
 T01 1500.0 DEPOSIT FLAGGED: Duplicate ID
 T01 60000.0 DEPOSIT FLAGGED: High-value review, Duplicate ID
+T03 -50.0 CREDIT FLAGGED: Invalid amount, Invalid type

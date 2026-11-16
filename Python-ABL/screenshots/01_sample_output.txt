@@ -1,6 +1,8 @@
 Number of applicants: 
 Applicant 1
 Name: Aggregate percentage: Subject 1 marks: Subject 2 marks: Subject 3 marks: Attendance percentage: Annual family income: 
+Applicant 2
+Name: Aggregate percentage: Subject 1 marks: Subject 2 marks: Subject 3 marks: Attendance percentage: Annual family income: 
 SCHOLARSHIP MERIT LIST
 1 Asha 88.0 90.0 180000.0
-Not eligible: []
+Not eligible: ['Ravi']

@@ -1,5 +1,8 @@
 Number of products: 
 Product 1
 Product name: Opening stock: Received: Dispatched: Physical closing stock: 
+Product 2
+Product name: Opening stock: Received: Dispatched: Physical closing stock: 
 STOCK RECONCILIATION
-Pen Expected: 40 Physical: 38 Difference: -2 SHORTAGE Reorder: 0
+Laptop Expected: 15 Physical: 12 Difference: -3 SHORTAGE Reorder: 8
+Mouse Expected: 25 Physical: 25 Difference: 0 MATCH Reorder: 0
