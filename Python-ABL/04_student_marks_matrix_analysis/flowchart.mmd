@@ -1,0 +1,19 @@
+# Flowchart – Case Study 4
+
+```mermaid
+flowchart TD
+ A([Start]) --> B[/Input subjects and student names/]
+ B --> C[Build nested marks matrix]
+ C --> D[Validate marks]
+ D --> E[Calculate each student's total and average]
+ E --> F[Find top performer]
+ F --> G[Calculate each subject average]
+ G --> H{Subject average below 50?}
+ H -- Yes --> I[Flag low-performing subject]
+ H -- No --> J[Continue]
+ I --> J
+ J --> K{More subjects?}
+ K -- Yes --> G
+ K -- No --> L[Display student and subject analysis]
+ L --> M([Stop])
+```

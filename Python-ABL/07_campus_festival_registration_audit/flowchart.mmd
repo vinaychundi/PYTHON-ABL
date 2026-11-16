@@ -1,0 +1,21 @@
+# Flowchart – Case Study 7
+
+```mermaid
+flowchart TD
+ A([Start]) --> B[/Input registration IDs and payments/]
+ B --> C[Normalize registration ID]
+ C --> D{ID already registered?}
+ D -- Yes --> E[Mark duplicate; do not count again]
+ D -- No --> F[Add ID and count first payment]
+ E --> G{More registrations?}
+ F --> G
+ G -- Yes --> B
+ G -- No --> H[/Input sponsorship and expenses/]
+ H --> I[Calculate revenue and final balance]
+ I --> J{Balance positive?}
+ J -- Yes --> K[Report SURPLUS]
+ J -- No --> L[Report deficit or break-even]
+ K --> M[Display financial audit]
+ L --> M
+ M --> N([Stop])
+```
