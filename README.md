@@ -20,20 +20,29 @@
 
 ## Repository structure
 - `programs/` — 10 executable Python source files.
-- `documentation/` — problem statements, objectives, assumptions, algorithms, flowcharts, pseudocode, test cases and conclusions.
-- `screenshots/` — sample program outputs.
-- `Python_ABL_Final_Report.pdf` — consolidated report.
+- `documentation/` — problem statements, objectives, assumptions, algorithms, flowcharts, pseudocode, test cases, conclusions and syllabus mapping.
+- `screenshots/` — generated sample-run screenshots and text outputs.
+- `Python_ABL_Final_Report.pdf` — consolidated report generated from the case-study documentation.
 
 ## Syllabus coverage
 - **Unit I:** Computational thinking, problem-solving, algorithms, flowcharts, Python fundamentals, data types, I/O, type conversion and operators.
 - **Unit II:** Decision-making, loops, strings, formatting, patterns and functions.
 - **Unit III:** Lists, nested lists, tuples, tuple unpacking, sets and membership testing.
 
-## Run
-Install Python 3 and run a program from the `programs` directory, for example:
+## Run a program
+Install Python 3 and run a program from the repository root, for example:
 
 ```bash
 python programs/01_scholarship_allocation.py
 ```
 
-All programs use Python's built-in features and require no external packages.
+## Generate the PDF and screenshots
+The repository includes `scripts/build_assets.py` and a GitHub Actions workflow named **Build Python ABL report and screenshots**.
+
+To generate or regenerate the report and 10 PNG output screenshots:
+1. Open the repository's **Actions** tab.
+2. Select **Build Python ABL report and screenshots**.
+3. Choose **Run workflow** and confirm.
+4. When the run succeeds, the generated PDF and screenshots are committed to the repository.
+
+All programs use Python's built-in features. The asset-generation script uses Pillow and ReportLab in GitHub Actions.
