@@ -1,6 +1,6 @@
 # Flowchart – Case Study 1
 
-This flowchart is provided in two viewable forms: the rendered PNG below and the editable Mermaid diagram source.
+The flowchart below is written in Mermaid. GitHub renders the diagram automatically when this Markdown file is opened. A PNG copy is also provided below.
 
 ![Flowchart – Case Study 1](./flowchart.png)
 
