@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "Python-ABL/**/flowchart.mmd"
+      - "Python-ABL/**/flowchart.md"
       - ".github/workflows/render-flowcharts.yml"
   workflow_dispatch:
 
@@ -23,7 +23,7 @@ jobs:
           node-version: 22
       - name: Install Mermaid CLI
         run: npm install --global @mermaid-js/mermaid-cli
-      - name: Render all Mermaid flowcharts as PNG
+      - name: Render Mermaid blocks from Markdown files
         shell: bash
         run: |
           set -euo pipefail
@@ -34,7 +34,7 @@ jobs:
             test -s "$temporary"
             mmdc -i "$temporary" -o "$directory/flowchart.png" -b white -w 1800
             rm -f "$temporary"
-          done < <(find Python-ABL -mindepth 2 -maxdepth 2 -name flowchart.mmd -print0 | sort -z)
+          done < <(find Python-ABL -mindepth 2 -maxdepth 2 -name flowchart.md -print0 | sort -z)
       - name: Commit rendered PNG files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
