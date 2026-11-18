@@ -17,12 +17,11 @@ Ten case studies, arranged in the recommended reading order. Open a numbered fol
 
 ## Inside each project folder
 1. README.md – problem statement, objectives, assumptions, algorithm, pseudocode, test cases and conclusion.
-2. flowchart.md – view the flowchart image and Mermaid-rendered diagram source.
-3. flowchart.mmd – editable Mermaid flowchart source.
-4. flowchart.png – rendered flowchart image (generated automatically by GitHub Actions).
-5. main.py – Python source code.
-6. test_cases.md – test case reference.
-7. screenshots/ – execution screenshot (output.png) and captured console output (output.txt).
+2. flowchart.md – open this file on GitHub to view the rendered flowchart.
+3. flowchart.png – rendered flowchart image (generated automatically by GitHub Actions).
+4. main.py – Python source code.
+5. test_cases.md – test case reference.
+6. screenshots/ – execution screenshot (output.png) and captured console output (output.txt).
 
 ## Shared submission files
 - Final report: Python_ABL_Final_Report.pdf
