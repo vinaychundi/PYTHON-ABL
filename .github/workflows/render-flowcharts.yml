@@ -1,0 +1,42 @@
+name: Render Python ABL flowcharts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Python-ABL/**/flowchart.mmd"
+      - ".github/workflows/render-flowcharts.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Mermaid CLI
+        run: npm install --global @mermaid-js/mermaid-cli
+      - name: Render all Mermaid flowcharts as PNG
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' source; do
+            directory="$(dirname "$source")"
+            temporary="$(mktemp --suffix=.mmd)"
+            awk '/^```mermaid[[:space:]]*$/ { inside=1; next } /^```[[:space:]]*$/ && inside { exit } inside { print }' "$source" > "$temporary"
+            test -s "$temporary"
+            mmdc -i "$temporary" -o "$directory/flowchart.png" -b white -w 1800
+            rm -f "$temporary"
+          done < <(find Python-ABL -mindepth 2 -maxdepth 2 -name flowchart.mmd -print0 | sort -z)
+      - name: Commit rendered PNG files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Render PNG versions of Python ABL flowcharts"
+          file_pattern: "Python-ABL/**/flowchart.png"
